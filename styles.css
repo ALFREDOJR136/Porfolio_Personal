@@ -24,6 +24,12 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     background-color: var(--bg-color);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+body.loading {
+    opacity: 0;
 }
 
 .container {
@@ -506,6 +512,73 @@ section {
     margin-right: 0.5rem;
 }
 
+/* Idiomas */
+.idiomas {
+    background-color: var(--bg-light);
+}
+
+.idiomas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.idioma-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.idioma-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.idioma-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto 1.5rem;
+}
+
+.idioma-card h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.idioma-nivel {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.idioma-bar {
+    background: var(--bg-light);
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.idioma-progress {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    height: 100%;
+    border-radius: 5px;
+    transition: width 1s ease;
+}
+
 /* Proyectos */
 .proyectos {
     background-color: var(--bg-light);
@@ -754,6 +827,10 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .idiomas-grid {
+        grid-template-columns: 1fr;
+    }
+
     .footer-content {
         flex-direction: column;
         text-align: center;
@@ -775,8 +852,29 @@ section {
 }
 
 /* Page Transitions */
+body {
+    overflow-x: hidden;
+}
+
 .page-content {
-    animation: fadeIn 0.6s ease-in-out;
+    animation: pageSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, opacity;
+}
+
+/* Suavizar el hero en la carga */
+.hero {
+    animation: heroFadeIn 0.8s ease-out 0.2s backwards;
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .page-section {
@@ -784,29 +882,60 @@ section {
     min-height: calc(100vh - 60px);
 }
 
-@keyframes fadeIn {
+@keyframes pageSlideIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateX(30px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
 .page-transition {
-    animation: fadeOut 0.3s ease-in-out;
+    animation: pageSlideOut 0.4s cubic-bezier(0.4, 0, 0.6, 1) forwards;
 }
 
-@keyframes fadeOut {
+@keyframes pageSlideOut {
     from {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
     to {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateX(-30px);
+    }
+}
+
+/* Fade transitions alternativas */
+.fade-transition-in {
+    animation: smoothFadeIn 0.6s ease-out;
+}
+
+@keyframes smoothFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-transition-out {
+    animation: smoothFadeOut 0.4s ease-in forwards;
+}
+
+@keyframes smoothFadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.98);
     }
 }
 

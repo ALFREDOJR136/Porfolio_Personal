@@ -27,20 +27,34 @@ document.querySelectorAll('a[href$=".html"]').forEach(link => {
             e.preventDefault();
             const targetUrl = link.getAttribute('href');
             
+            // Cerrar menú móvil si está abierto
+            if (navMenu) navMenu.classList.remove('active');
+            if (hamburger) hamburger.classList.remove('active');
+            
+            // Scroll al top suavemente antes de la transición
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
             // Añadir clase de transición
             const pageContent = document.querySelector('.page-content');
+            const body = document.body;
+            
             if (pageContent) {
                 pageContent.classList.add('page-transition');
             } else {
-                document.body.classList.add('page-transition');
+                body.classList.add('page-transition');
             }
             
-            // Navegar después de la animación
+            // Navegar después de la animación (400ms para que coincida con la animación)
             setTimeout(() => {
                 window.location.href = targetUrl;
-            }, 300);
+            }, 400);
         }
     });
+});
+
+// Prevenir flash en carga de página
+window.addEventListener('load', () => {
+    document.body.style.opacity = '1';
 });
 
 // Scroll suave para anclas
