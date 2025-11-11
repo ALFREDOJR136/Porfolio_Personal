@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">AME</div>
             <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
-                <li><a href="#estudios" class="nav-link">Estudios</a></li>
-                <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
-                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                <li><a href="estudios.html" class="nav-link">Estudios</a></li>
+                <li><a href="experiencia.html" class="nav-link">Experiencia</a></li>
+                <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
             </ul>
+            <div class="nav-social-links">
+                <a href="https://github.com/ALFREDOJR136" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:tu-email@ejemplo.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -28,19 +30,17 @@
         </div>
     </nav>
 
+    <!-- Contenedor principal para transiciones -->
+    <main class="page-content">
+
     <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h1 class="hero-title">Alfredo Martínez Escoval</h1>
-            <p class="hero-subtitle">Desarrollador Full Stack | Técnico en Sistemas Microinformáticos y Redes</p>
+            <p class="hero-subtitle">Estudiante de Ingeniería de Sistemas de Información | Ingeniería Informática</p>
             <div class="hero-buttons">
-                <a href="#contacto" class="btn btn-primary">Contáctame</a>
-                <a href="#proyectos" class="btn btn-secondary">Ver Proyectos</a>
-            </div>
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:tu-email@ejemplo.com"><i class="fas fa-envelope"></i></a>
+                <a href="contacto.html" class="btn btn-primary">Contáctame</a>
+                <a href="proyectos.html" class="btn btn-secondary">Ver Proyectos</a>
             </div>
         </div>
         <div class="scroll-down">
@@ -63,295 +63,12 @@
                         de programación, redes y administración de sistemas. Mi objetivo es seguir creciendo 
                         profesionalmente y contribuir con proyectos innovadores.
                     </p>
-                    <div class="sobre-mi-stats">
-                        <div class="stat">
-                            <h3>2+</h3>
-                            <p>Años de Experiencia</p>
-                        </div>
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Proyectos Completados</p>
-                        </div>
-                        <div class="stat">
-                            <h3>100%</h3>
-                            <p>Dedicación</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Estudios Section -->
-    <section id="estudios" class="estudios">
-        <div class="container">
-            <h2 class="section-title">Formación Académica</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Técnico en Sistemas Microinformáticos y Redes</h3>
-                        <p class="timeline-date">2020 - 2022</p>
-                        <p>Formación profesional enfocada en la gestión de sistemas informáticos, redes, 
-                           hardware y software.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Cursos y Certificaciones</h3>
-                        <p class="timeline-date">Formación Continua</p>
-                        <ul>
-                            <li>Desarrollo Web Full Stack</li>
-                            <li>Administración de Redes</li>
-                            <li>Seguridad Informática</li>
-                            <li>Base de Datos</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experiencia Section -->
-    <section id="experiencia" class="experiencia">
-        <div class="container">
-            <h2 class="section-title">Experiencia Profesional</h2>
-            <div class="experiencia-grid">
-                <div class="experiencia-card">
-                    <div class="card-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Desarrollo de Software</h3>
-                    <p class="experiencia-periodo">2022 - Presente</p>
-                    <p>Desarrollo de aplicaciones web utilizando tecnologías modernas como HTML, CSS, JavaScript, 
-                       y frameworks como React y Node.js.</p>
-                </div>
-                <div class="experiencia-card">
-                    <div class="card-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Administración de Redes</h3>
-                    <p class="experiencia-periodo">2021 - 2023</p>
-                    <p>Gestión y mantenimiento de infraestructuras de red, configuración de routers, switches 
-                       y sistemas de seguridad.</p>
-                </div>
-                <div class="experiencia-card">
-                    <div class="card-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Soporte Técnico</h3>
-                    <p class="experiencia-periodo">2020 - 2022</p>
-                    <p>Resolución de problemas técnicos, mantenimiento de equipos informáticos y 
-                       asistencia a usuarios.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Habilidades Section -->
-    <section id="habilidades" class="habilidades">
-        <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="habilidades-grid">
-                <div class="habilidad-categoria">
-                    <h3><i class="fas fa-code"></i> Programación</h3>
-                    <div class="skill-bars">
-                        <div class="skill">
-                            <div class="skill-name">HTML/CSS</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">Python</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">SQL</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="habilidad-categoria">
-                    <h3><i class="fas fa-server"></i> Sistemas y Redes</h3>
-                    <div class="skill-bars">
-                        <div class="skill">
-                            <div class="skill-name">Windows Server</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">Linux</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">Redes TCP/IP</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">Virtualización</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="habilidad-categoria">
-                    <h3><i class="fas fa-tools"></i> Herramientas</h3>
-                    <div class="tools-grid">
-                        <div class="tool-item"><i class="fab fa-git-alt"></i> Git</div>
-                        <div class="tool-item"><i class="fab fa-github"></i> GitHub</div>
-                        <div class="tool-item"><i class="fas fa-database"></i> MySQL</div>
-                        <div class="tool-item"><i class="fab fa-docker"></i> Docker</div>
-                        <div class="tool-item"><i class="fas fa-terminal"></i> Terminal</div>
-                        <div class="tool-item"><i class="fab fa-node-js"></i> Node.js</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Proyectos Section -->
-    <section id="proyectos" class="proyectos">
-        <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <div class="proyectos-grid">
-                <div class="proyecto-card">
-                    <div class="proyecto-image">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <div class="proyecto-content">
-                        <h3>Sistema de Gestión de Red</h3>
-                        <p>Desarrollo de una aplicación para monitorizar y gestionar la infraestructura de red 
-                           de una empresa, incluyendo configuración automatizada y alertas en tiempo real.</p>
-                        <div class="proyecto-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Redes</span>
-                            <span class="tag">Automatización</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto-card">
-                    <div class="proyecto-image">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="proyecto-content">
-                        <h3>E-Commerce Web</h3>
-                        <p>Tienda online completa con carrito de compras, sistema de pagos y panel de 
-                           administración para gestión de productos e inventario.</p>
-                        <div class="proyecto-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto-card">
-                    <div class="proyecto-image">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="proyecto-content">
-                        <h3>Sistema de Seguridad</h3>
-                        <p>Implementación de un sistema de seguridad informática con firewall, detección de 
-                           intrusos y políticas de acceso para proteger la red corporativa.</p>
-                        <div class="proyecto-tags">
-                            <span class="tag">Seguridad</span>
-                            <span class="tag">Firewall</span>
-                            <span class="tag">Linux</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto-card">
-                    <div class="proyecto-image">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="proyecto-content">
-                        <h3>App de Gestión de Tareas</h3>
-                        <p>Aplicación web responsive para gestión de proyectos y tareas con sistema de usuarios, 
-                           notificaciones y seguimiento de progreso.</p>
-                        <div class="proyecto-tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">API REST</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto Section -->
-    <section id="contacto" class="contacto">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contacto-content">
-                <div class="contacto-info">
-                    <h3>¿Hablamos?</h3>
-                    <p>Estoy disponible para nuevos proyectos y oportunidades. No dudes en contactarme.</p>
-                    <div class="contacto-items">
-                        <div class="contacto-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>tu-email@ejemplo.com</p>
-                            </div>
-                        </div>
-                        <div class="contacto-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Teléfono</h4>
-                                <p>+34 XXX XXX XXX</p>
-                            </div>
-                        </div>
-                        <div class="contacto-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Ubicación</h4>
-                                <p>España</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contacto-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Tu Nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Tu Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Asunto">
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="5" placeholder="Mensaje" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
