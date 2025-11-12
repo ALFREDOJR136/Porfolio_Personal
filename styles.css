@@ -896,6 +896,43 @@ section {
     padding: 1.5rem;
 }
 
+.proyecto-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.badge-estado,
+.badge-tipo {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-estado.completado {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.badge-estado.en-curso {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.badge-tipo.personal {
+    background: #ddd6fe;
+    color: #5b21b6;
+}
+
+.badge-tipo.universitario {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
 .proyecto-content h3 {
     color: var(--text-color);
     margin-bottom: 1rem;
@@ -904,6 +941,27 @@ section {
 .proyecto-content p {
     color: var(--text-light);
     margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.proyecto-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #e5e7eb, transparent);
+    margin: 1.5rem 0;
+}
+
+.tecnologias-section {
+    margin-top: 1rem;
+}
+
+.tecnologias-titulo {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .proyecto-tags {
