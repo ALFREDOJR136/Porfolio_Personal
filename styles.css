@@ -447,7 +447,7 @@ section {
 
 /* Experiencia */
 .experiencia {
-    background-color: var(--bg-light);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .experiencia-grid {
@@ -860,7 +860,7 @@ section {
 
 /* Proyectos */
 .proyectos {
-    background-color: var(--bg-light);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .proyectos-grid {
