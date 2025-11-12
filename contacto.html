@@ -38,44 +38,55 @@
                 <div class="contacto-content">
                     <div class="contacto-info">
                         <h3>¿Hablamos?</h3>
-                        <p>Estoy disponible para nuevos proyectos y oportunidades. No dudes en contactarme.</p>
+                        <p>¡Puedes contactarme a través de cualquiera de estos medios!</p>
                         <div class="contacto-items">
                             <div class="contacto-item">
                                 <i class="fas fa-envelope"></i>
                                 <div>
                                     <h4>Email</h4>
-                                    <p>tu-email@ejemplo.com</p>
+                                    <p>a.martinez.escoval@gmail.com</p>
                                 </div>
                             </div>
                             <div class="contacto-item">
                                 <i class="fas fa-phone"></i>
                                 <div>
                                     <h4>Teléfono</h4>
-                                    <p>+34 XXX XXX XXX</p>
+                                    <p>+34 625 551 186</p>
+                                </div>
+                            </div>
+                            <div class="contacto-item">
+                                <i class="fab fa-linkedin"></i>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <p>Alfredo Martínez Escoval</p>
+                                </div>
+                            </div>
+                            <div class="contacto-item">
+                                <i class="fab fa-github"></i>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <p>ALFREDOJR136</p>
                                 </div>
                             </div>
                             <div class="contacto-item">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div>
                                     <h4>Ubicación</h4>
-                                    <p>España</p>
+                                    <p>Alcorcón, Madrid (España)</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="contacto-form">
-                        <form>
+                        <form id="contactForm">
                             <div class="form-group">
-                                <input type="text" placeholder="Tu Nombre" required>
+                                <input type="text" id="nombre" placeholder="Tu Nombre" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="Tu Email" required>
+                                <input type="text" id="asunto" placeholder="Asunto">
                             </div>
                             <div class="form-group">
-                                <input type="text" placeholder="Asunto">
-                            </div>
-                            <div class="form-group">
-                                <textarea rows="5" placeholder="Mensaje" required></textarea>
+                                <textarea rows="8" id="mensaje" placeholder="Mensaje" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                         </form>
@@ -100,4 +111,46 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Funcionalidad del formulario de contacto
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const nombre = document.getElementById('nombre').value;
+                    const asunto = document.getElementById('asunto').value || 'Mensaje desde portfolio';
+                    const mensaje = document.getElementById('mensaje').value;
+                    
+                    // Validar que hay datos
+                    if (!nombre || !mensaje) {
+                        alert('Por favor, completa todos los campos requeridos');
+                        return;
+                    }
+                    
+                    // Construir el body del email
+                    const body = mensaje + '%0D%0A%0D%0A' +
+                                '----%0D%0A' +
+                                'Enviado por: ' + nombre;
+                    
+                    // Construir el mailto
+                    const mailtoLink = 'mailto:a.martinez.escoval@gmail.com?subject=' + 
+                                      encodeURIComponent(asunto) + 
+                                      '&body=' + body;
+                    
+                    console.log('MailtoLink:', mailtoLink); // Para debug
+                    
+                    // Abrir el cliente de correo
+                    window.location.href = mailtoLink;
+                    
+                    // Limpiar el formulario después de un pequeño delay
+                    setTimeout(() => {
+                        form.reset();
+                    }, 1000);
+                });
+            }
+        });
+    </script>
 </body>

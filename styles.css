@@ -922,6 +922,91 @@ section {
 }
 
 /* Contacto */
+.contacto {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.contacto-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin: -1rem 0 3rem 0;
+}
+
+.contacto-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contacto-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contacto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.contacto-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.phone-icon {
+    background: linear-gradient(135deg, #34d399, #10b981);
+}
+
+.email-icon {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+}
+
+.linkedin-icon {
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+}
+
+.location-icon {
+    background: linear-gradient(135deg, #f87171, #ef4444);
+}
+
+.contacto-card h3 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.contacto-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+    word-break: break-word;
+}
+
+.contacto-card:hover h3 {
+    color: var(--primary-color);
+}
+
 .contacto-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -968,11 +1053,27 @@ section {
     color: var(--text-light);
 }
 
+.cv-download {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.cv-download:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
 .contacto-form {
     background: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .form-group {
@@ -982,7 +1083,7 @@ section {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.75rem;
+    padding: 1rem;
     border: 2px solid var(--border-color);
     border-radius: 5px;
     font-family: inherit;

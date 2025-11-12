@@ -142,20 +142,6 @@ if (fadeElements.length > 0) {
     });
 }
 
-// Formulario de contacto
-const contactForm = document.querySelector('.contacto-form form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Aquí puedes agregar la lógica para enviar el formulario
-        // Por ahora, solo mostramos un mensaje
-        alert('¡Gracias por tu mensaje! Te contactaré pronto.');
-        contactForm.reset();
-    });
-}
-
 // Efecto de escritura en el hero (opcional)
 const heroSubtitle = document.querySelector('.hero-subtitle');
 if (heroSubtitle) {
