@@ -371,14 +371,29 @@ section {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
+    transition: all 0.3s ease;
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
     margin-right: 0rem;
+    border-left: 4px solid transparent;
+}
+
+.timeline-item:nth-child(odd) .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-left-color: var(--primary-color);
 }
 
 .timeline-item:nth-child(even) .timeline-content {
     margin-left: 0rem;
+    border-right: 4px solid transparent;
+}
+
+.timeline-item:nth-child(even) .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-right-color: var(--primary-color);
 }
 
 .timeline-content h3 {
@@ -869,111 +884,124 @@ section {
     gap: 2rem;
 }
 
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
 .proyecto-card {
     background: white;
     border-radius: 10px;
-    overflow: hidden;
+    padding: 2rem;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
+    border-left: 4px solid transparent;
 }
 
 .proyecto-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
+    border-left-color: var(--primary-color);
 }
 
-.proyecto-image {
+.proyecto-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.proyecto-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    height: 200px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 1.5rem;
     color: white;
 }
 
-.proyecto-content {
-    padding: 1.5rem;
-}
-
-.proyecto-badges {
+.proyecto-status {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
     flex-wrap: wrap;
+    flex: 1;
+}
+
+.status-simple {
+    display: flex;
+    align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
 }
 
-.badge-estado,
+.status-dot {
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    border-radius: 50%;
+}
+
+.status-dot.completado {
+    background: #10b981;
+}
+
+.status-dot.en-curso {
+    background: #fb923c;
+}
+
+.status-text {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
 .badge-tipo {
-    padding: 0.3rem 0.8rem;
+    padding: 0.35rem 0.9rem;
     border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 2px solid;
+    background: transparent;
+    color: #3b82f6;
+    border-color: #3b82f6;
+    margin-left: auto;
 }
 
-.badge-estado.completado {
-    background: #d1fae5;
-    color: #065f46;
+.proyecto-info {
+    margin-bottom: 1.5rem;
 }
 
-.badge-estado.en-curso {
-    background: #fef3c7;
-    color: #92400e;
-}
-
-.badge-tipo.personal {
-    background: #ddd6fe;
-    color: #5b21b6;
-}
-
-.badge-tipo.universitario {
-    background: #dbeafe;
-    color: #1e40af;
-}
-
-.proyecto-content h3 {
+.proyecto-info h3 {
     color: var(--text-color);
     margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
 }
 
-.proyecto-content p {
+.proyecto-info p {
     color: var(--text-light);
-    margin-bottom: 1rem;
-    line-height: 1.6;
+    line-height: 1.7;
     text-align: justify;
 }
 
-.proyecto-divider {
-    height: 1px;
-    background: linear-gradient(to right, transparent, #e5e7eb, transparent);
-    margin: 1.5rem 0;
-}
-
-.tecnologias-section {
-    margin-top: 1rem;
-}
-
-.tecnologias-titulo {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    margin-bottom: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.proyecto-tags {
+.proyecto-footer {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1f3f5;
 }
 
 .tag {
     background: var(--bg-light);
     color: var(--primary-color);
-    padding: 0.3rem 0.8rem;
+    padding: 0.4rem 1rem;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
