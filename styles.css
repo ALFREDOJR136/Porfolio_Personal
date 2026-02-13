@@ -772,140 +772,144 @@ section {
     background: linear-gradient(135deg, #e5eaf0 0%, #dce4ed 100%);
 }
 
-.habilidades-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
+.habilidades .container {
+    max-width: none;
+    padding: 0;
+}
+
+.habilidades-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 89%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .habilidad-categoria {
     background: white;
-    padding: 2rem;
-    border-radius: 10px;
+    padding: 1rem 2.5rem;
+    border-radius: 12px;
     box-shadow: var(--shadow);
 }
 
 .habilidad-categoria h3 {
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-.skill {
-    margin-bottom: 1.5rem;
-}
-
-.skill-name {
-    margin-bottom: 0.5rem;
-    font-weight: 600;
     color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.75rem;
 }
 
-.skill-bar {
-    background: var(--bg-light);
-    height: 10px;
-    border-radius: 5px;
-    overflow: hidden;
+.habilidad-categoria h3 i {
+    font-size: 1.8rem;
 }
 
-.skill-progress {
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-    height: 100%;
-    border-radius: 5px;
-    transition: width 1s ease;
-}
+/* Colores de iconos de categorías */
+.habilidad-categoria h3 .fa-code { color: #2563eb; }
+.habilidad-categoria h3 .fa-layer-group { color: #10b981; }
+.habilidad-categoria h3 .fa-database { color: #f59e0b; }
+.habilidad-categoria h3 .fa-tools { color: #8b5cf6; }
+.habilidad-categoria h3 .fa-info-circle { color: #06b6d4; }
+.habilidad-categoria h3 .fa-user-friends { color: #ec4899; }
 
-/* Grid de lenguajes de programación */
-.languages-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+/* Grid unificado para tecnologías */
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
-.language-item {
+.tech-item {
     background: var(--bg-light);
-    padding: 1rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 10px;
     text-align: center;
     font-weight: 600;
+    font-size: 0.95rem;
     color: var(--text-color);
     transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: default;
+    white-space: nowrap;
 }
 
-.language-item:hover {
+.tech-item:hover {
     background: var(--primary-color);
     color: white;
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
-.language-item i {
-    margin-right: 0.5rem;
+.tech-item:hover i {
+    color: white !important;
 }
 
-/* Soft Skills List */
+.tech-item i {
+    font-size: 1.4rem;
+}
+
+/* Colores de iconos de tecnologías */
+.fa-python { color: #3776AB; }
+.fa-java { color: #f89820; }
+.fa-js-square { color: #F7DF1E; }
+.fa-code { color: #A8B9CC; }
+.fa-brain { color: #E4405F; }
+.fa-html5 { color: #E34F26; }
+.fa-css3-alt { color: #1572B6; }
+.fa-r-project { color: #276DC3; }
+.fa-node-js { color: #339933; }
+.fa-bootstrap { color: #7952B3; }
+.fa-git-alt { color: #F05032; }
+.fa-github { color: #181717; }
+.fa-database { color: #00758F; }
+.fa-server { color: #000000; }
+.fa-table { color: #003B57; }
+.fa-share-alt { color: #1BA0D7; }
+.fa-file-word { color: #2B579A; }
+.fa-project-diagram { color: #FF6B6B; }
+.fa-cube { color: #44A833; }
+.fa-thumbs-up { color: #1877F2; }
+.fa-dollar-sign { color: #059669; }
+
+/* Soft Skills List - mismo estilo que tech-item */
 .soft-skills-list {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.soft-skills-list li {
-    padding: 1.2rem 0;
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: 500;
-    border-bottom: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-}
-
-.soft-skills-list li:last-child {
-    border-bottom: none;
-}
-
-.soft-skills-list li i {
-    color: var(--primary-color);
-    margin-right: 0.8rem;
-    font-size: 1.1rem;
-}
-
-.soft-skills-list li:hover {
-    padding-left: 0.5rem;
-    color: var(--primary-color);
-}
-
-.soft-skills-list li:hover i {
-    transform: scale(1.2);
-}
-
-.tools-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
-.tool-item {
-    background: var(--bg-light);
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: 600;
+.soft-skills-list li {
+    padding: 0.75rem 1.5rem;
     color: var(--text-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+    background: var(--bg-light);
+    border-radius: 10px;
     transition: all 0.3s ease;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 60px;
+    cursor: default;
+    white-space: nowrap;
 }
 
-.tool-item:hover {
+.soft-skills-list li:hover {
     background: var(--primary-color);
     color: white;
-    transform: scale(1.05);
-}
-
-.tool-item i {
-    margin-right: 0.5rem;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 /* Idiomas */
@@ -1455,12 +1459,13 @@ section {
         margin-right: 0 !important;
     }
 
-    .habilidades-grid {
-        grid-template-columns: 1fr;
+    .habilidades-vertical {
+        gap: 1.5rem;
     }
 
-    .languages-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .tech-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 0.75rem;
     }
 
     .idiomas-grid {
