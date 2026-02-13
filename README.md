@@ -1,67 +1,59 @@
-# Portfolio Personal - Alfredo Martínez Escoval
+# 🌐 Portfolio Personal - Alfredo Martínez Escoval
 
-Portfolio personal profesional con navegación entre páginas y transiciones suaves.
-
-## 📁 Estructura del Proyecto
-
-El portfolio está dividido en 5 páginas HTML independientes:
-
-### 1. **index.html** - Página Principal
-- Hero Section (Presentación)
-- Sobre Mí
-- Habilidades Técnicas
-
-### 2. **estudios.html** - Formación Académica
-- Timeline de estudios
-- Certificaciones y cursos
-
-### 3. **experiencia.html** - Experiencia Profesional
-- Desarrollo de Software
-- Administración de Redes
-- Soporte Técnico
-
-### 4. **proyectos.html** - Proyectos Destacados
-- Galería de proyectos
-- Descripción y tecnologías utilizadas
-
-### 5. **contacto.html** - Información de Contacto
-- Formulario de contacto
-- Datos de contacto
-- Ubicación
-
-## 🎨 Características
-
-- ✅ **Diseño Responsive** - Compatible con móviles, tablets y escritorio
-- ✅ **Navegación Fluida** - Transiciones suaves entre páginas con JavaScript
-- ✅ **Navbar con Blur** - Efecto de transparencia con backdrop-filter
-- ✅ **Animaciones** - Efectos de aparición al hacer scroll
-- ✅ **Enlaces Sociales** - GitHub, LinkedIn y Email en el navbar
-- ✅ **Active State** - Indicador visual de la página actual
-
-## 🚀 Tecnologías
-
-- HTML5
-- CSS3 (Flexbox, Grid, Animations)
-- JavaScript (ES6+)
-- Font Awesome (Iconos)
-
-## 📝 Navegación
-
-El sistema de navegación utiliza:
-- Enlaces relativos entre páginas HTML
-- Transiciones CSS con fadeIn/fadeOut
-- JavaScript para efectos suaves de carga
-- Active state automático según la página actual
-
-## 🎯 Próximas Mejoras
-
-- Añadir más proyectos
-- Integrar backend para formulario de contacto
-- Optimizar imágenes y recursos
-- Implementar modo oscuro/claro
+<div align="center">
+Portfolio personal profesional y responsive para mostrar mi trayectoria académica, experiencia laboral, proyectos destacados y certificaciones.
+</div>
 
 ---
 
-**Desarrollado por Alfredo Martínez Escoval** | 2025
+## 🎯 Sobre el Proyecto
 
-Portfolio personal para la presentación de mi perfil profesional y mis principales trabajos en el área del desarrollo.
+Este portfolio personal ha sido desarrollado desde cero utilizando HTML5, CSS y JavaScript, con el objetivo de presentar de manera profesional y visual mi perfil como desarrollador, mis proyectos más destacados, mi formación académica y mi experiencia laboral.
+
+El sitio cuenta con una navegación fluida entre páginas, diseño responsive completamente adaptable a cualquier dispositivo, y animaciones suaves que mejoran la experiencia del usuario.
+---
+
+## 📁 Estructura del Proyecto
+
+```
+Porfolio_Personal/
+│
+├── index.html              
+├── estudios.html         
+├── experiencia.html         
+├── proyectos.html          
+├── contacto.html          
+├── styles.css              
+├── script.js              
+├── CV - Alfredo martínez escoval.pdf
+└── README.md
+```
+---
+
+## 🛠️ Tecnologías
+
+Este proyecto ha sido construido utilizando tecnologías web fundamentales:
+
+| Tecnología | Descripción |
+|-----------|-------------|
+| ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) | Estructura semántica del sitio |
+| ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white) | Estilos, animaciones y diseño responsive |
+| ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | Interactividad y navegación |
+| ![Font Awesome](https://img.shields.io/badge/-Font_Awesome-339AF0?style=flat&logo=fontawesome&logoColor=white) | Biblioteca de iconos |
+
+---
+## 💻 Uso
+
+### Visualización Local
+
+Simplemente abre `index.html` en tu navegador preferido. No requiere servidor local ni dependencias adicionales.
+
+---
+## 🤝 Contacto
+
+**Alfredo Martínez Escoval**
+
+- 💼 LinkedIn: [@alfredo-martinez-escoval](https://www.linkedin.com/in/alfredo-martinez-escoval-b68544397)
+- 🐙 GitHub: [@ALFREDOJR136](https://github.com/ALFREDOJR136)
+- 📧 Email: a.martinez.escoval@gmail.com
+- 🌐 Portfolio: [alfredojr136.github.io](https://alfredojr136.github.io/Porfolio_Personal/)
