@@ -11,21 +11,28 @@
         <div class="nav-container">
             <div class="logo">AME</div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="estudios.html" class="nav-link active">Estudios</a></li>
-                <li><a href="experiencia.html" class="nav-link">Experiencia</a></li>
-                <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
-                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="index.html" class="nav-link" data-translate="nav_inicio">Inicio</a></li>
+                <li><a href="estudios.html" class="nav-link active" data-translate="nav_estudios">Estudios</a></li>
+                <li><a href="experiencia.html" class="nav-link" data-translate="nav_experiencia">Experiencia</a></li>
+                <li><a href="proyectos.html" class="nav-link" data-translate="nav_proyectos">Proyectos</a></li>
+                <li><a href="contacto.html" class="nav-link" data-translate="nav_contacto">Contacto</a></li>
             </ul>
-            <div class="nav-social-links">
-                <a href="https://github.com/ALFREDOJR136" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/alfredo-martinez-escoval-b68544397" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:a.martinez.escoval@gmail.com?body=----%0D%0AEnviado por: " title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-right-section">
+                <div class="nav-social-links">
+                    <a href="https://github.com/ALFREDOJR136" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alfredo-martinez-escoval-b68544397" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:a.martinez.escoval@gmail.com?body=----%0D%0AEnviado por: " title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div id="languageToggle" class="language-toggle" aria-label="Cambiar idioma">
+                    <span class="lang-option" data-lang="es">ES</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                    <span class="lang-indicator"></span>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -34,19 +41,19 @@
         <!-- Estudios Section -->
         <section id="estudios" class="estudios page-section">
             <div class="container">
-                <h2 class="section-title">Formación Académica</h2>
+                <h2 class="section-title" data-translate="estudios_title">Formación Académica</h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <div class="timeline-content">
-                            <h3>Ingeniería de Sistemas de Información</h3>
+                            <h3 data-translate="estudios_carrera">Ingeniería de Sistemas de Información</h3>
                             <div class="timeline-meta">
-                                <p class="timeline-institution"><i class="fas fa-university"></i> Universidad CEU San Pablo</p>
-                                <p class="timeline-date">2021 - Actualidad</p>
+                                <p class="timeline-institution"><i class="fas fa-university"></i> <span data-translate="estudios_institucion">Universidad CEU San Pablo</span></p>
+                                <p class="timeline-date" data-translate="estudios_periodo_actual">2021 - Actualidad</p>
                             </div>
-                            <p>Actualmente curso el grado en Ingeniería Informática, donde estoy adquiriendo una formación sólida en 
+                            <p data-translate="estudios_desc_carrera">Actualmente curso el grado en Ingeniería Informática, donde estoy adquiriendo una formación sólida en 
                                desarrollo de software, arquitectura de sistemas y gestión de proyectos tecnológicos. Esta etapa me está 
                                permitiendo fortalecer mis habilidades técnicas y analíticas, además de comprender en profundidad cómo la 
                                tecnología puede aportar soluciones innovadoras a distintos ámbitos.</p>
@@ -66,12 +73,12 @@
                             <i class="fas fa-certificate"></i>
                         </div>
                         <div class="timeline-content">
-                            <h3>Desarrollo de aplicaciones en tarjetas inteligentes</h3>
+                            <h3 data-translate="estudios_tarjetas_title">Desarrollo de aplicaciones en tarjetas inteligentes</h3>
                             <div class="timeline-meta">
-                                <p class="timeline-institution"><i class="fas fa-building"></i> Diusframi</p>
-                                <p class="timeline-date">Octubre 2025 - Noviembre 2025</p>
+                                <p class="timeline-institution"><i class="fas fa-building"></i> <span data-translate="estudios_tarjetas_empresa">Diusframi</span></p>
+                                <p class="timeline-date" data-translate="estudios_tarjetas_periodo">Octubre 2025 - Noviembre 2025</p>
                             </div>
-                            <p>Curso en el que profundicé en el funcionamiento y las aplicaciones de las tarjetas virtuales e inteligentes, 
+                            <p data-translate="estudios_tarjetas_desc">Curso en el que profundicé en el funcionamiento y las aplicaciones de las tarjetas virtuales e inteligentes, 
                                    analizando distintos tipos como tarjetas de transporte, bancarias o documentos electrónicos de identidad, 
                                    así como formatos alternativos como pulseras o llaveros para pagos y accesos. Comprendí las tecnologías que integran,
                                    sus diferencias y la evolución de sus mecanismos de seguridad. Además, participé en simulaciones prácticas sobre configuración
@@ -83,7 +90,7 @@
                                 </div>
                                 <hr class="certificate-divider">
                                 <a href="https://www.smartportfolio.es/SP_VRF/credential.aspx?token=mF3HhCWwY86jCEbom9ZwLrAVKjmqy9j3qB44Mb3P6kGYPxTo5Tx7crGJr4yKbdDw" class="certificate-link" target="_blank">
-                                    <i class="fas fa-file-certificate"></i> Ver certificado
+                                    <i class="fas fa-file-certificate"></i> <span data-translate="ver_certificado">Ver certificado</span>
                                 </a>
                         </div>
                     </div>
@@ -92,12 +99,12 @@
                             <i class="fas fa-certificate"></i>
                         </div>
                         <div class="timeline-content">
-                            <h3>Mejora tu empleabilidad desarrollando tu capacidad para (intra)emprender</h3>
+                            <h3 data-translate="estudios_emprender_title">Mejora tu empleabilidad desarrollando tu capacidad para (intra)emprender</h3>
                             <div class="timeline-meta">
-                                <p class="timeline-institution"><i class="fas fa-building"></i> BeForGet</p>
-                                <p class="timeline-date">Mayo 2025</p>
+                                <p class="timeline-institution"><i class="fas fa-building"></i> <span data-translate="estudios_emprender_empresa">BeForGet</span></p>
+                                <p class="timeline-date" data-translate="estudios_emprender_periodo">Mayo 2025</p>
                             </div>
-                            <p>Taller enfocado en el desarrollo de habilidades para reconocer y comunicar mi valor profesional. 
+                            <p data-translate="estudios_emprender_desc">Taller enfocado en el desarrollo de habilidades para reconocer y comunicar mi valor profesional. 
                                    A través de distintas metodologías aprendí a generar y validar ideas de negocio, a definir propuestas
                                    de valor efectivas y a fortalecer mi empleabilidad. Además, tuve la oportunidad de conectar con otros 
                                    estudiantes interesados en la innovación y el emprendimiento.</p>
@@ -108,7 +115,7 @@
                                 </div>
                                 <hr class="certificate-divider">
                                 <a href="https://www.credential.net/9f6220cf-6b96-458e-98ab-eb52d5148923#acc.ureDPws1" class="certificate-link" target="_blank">
-                                    <i class="fas fa-file-certificate"></i> Ver certificado
+                                    <i class="fas fa-file-certificate"></i> <span data-translate="ver_certificado">Ver certificado</span>
                                 </a>
                         </div>
                     </div>
@@ -117,12 +124,12 @@
                             <i class="fas fa-certificate"></i>
                         </div>
                         <div class="timeline-content">
-                            <h3>Introduction to IoT</h3>
+                            <h3 data-translate="estudios_iot_title">Introduction to IoT</h3>
                             <div class="timeline-meta">
-                                <p class="timeline-institution"><i class="fas fa-building"></i> Cisco Networking Academy</p>
-                                <p class="timeline-date">Enero 2022</p>
+                                <p class="timeline-institution"><i class="fas fa-building"></i> <span data-translate="estudios_iot_empresa">Cisco Networking Academy</span></p>
+                                <p class="timeline-date" data-translate="estudios_iot_periodo">Enero 2022</p>
                             </div>
-                            <p>Curso en el que aprendí los fundamentos del Internet of Things (IoT) y cómo esta tecnología impulsa la transformación digital.
+                            <p data-translate="estudios_iot_desc">Curso en el que aprendí los fundamentos del Internet of Things (IoT) y cómo esta tecnología impulsa la transformación digital.
                                    También comprendí el papel que tienen la analítica de datos, la inteligencia artificial y el aprendizaje automático en este proceso y
                                    además, profundicé en la importancia de la ciberseguridad y las redes inteligentes para conectar y proteger dispositivos.</p>
                                 <div class="skills-tags">
@@ -131,7 +138,7 @@
                                 </div>
                                 <hr class="certificate-divider">
                                 <a href="https://www.credly.com/badges/549068ef-2d6c-42ea-a719-109cf26b8620/linked_in_profile" class="certificate-link" target="_blank">
-                                    <i class="fas fa-file-certificate"></i> Ver certificado
+                                    <i class="fas fa-file-certificate"></i> <span data-translate="ver_certificado">Ver certificado</span>
                                 </a>
                         </div>
                     </div>
@@ -140,12 +147,12 @@
                             <i class="fas fa-school"></i>
                         </div>
                         <div class="timeline-content">
-                            <h3>Bachillerato Tecnológico</h3>
+                            <h3 data-translate="estudios_bachillerato_title">Bachillerato Tecnológico</h3>
                             <div class="timeline-meta">
-                                <p class="timeline-institution"><i class="fas fa-school"></i> Colegio CEU San Pablo</p>
-                                <p class="timeline-date">2019 - 2021</p>
+                                <p class="timeline-institution"><i class="fas fa-school"></i> <span data-translate="estudios_bachillerato_institucion">Colegio CEU San Pablo</span></p>
+                                <p class="timeline-date" data-translate="estudios_bachillerato_periodo">2019 - 2021</p>
                             </div>
-                            <p>Cursé el Bachillerato Tecnológico con un enfoque en ciencias y tecnología, lo que me permitió adquirir una base 
+                            <p data-translate="estudios_bachillerato_desc">Cursé el Bachillerato Tecnológico con un enfoque en ciencias y tecnología, lo que me permitió adquirir una base 
                                     sólida en materias técnicas y científicas. Durante esta etapa desarrollé el pensamiento lógico, la capacidad
                                     de análisis y el interés por la innovación y la resolución de problemas, sentando las bases para mi formación en el ámbito tecnológico.</p>
                                 <div class="skills-tags">
@@ -176,5 +183,6 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>

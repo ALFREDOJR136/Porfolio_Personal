@@ -11,21 +11,28 @@
         <div class="nav-container">
             <div class="logo">AME</div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="estudios.html" class="nav-link">Estudios</a></li>
-                <li><a href="experiencia.html" class="nav-link active">Experiencia</a></li>
-                <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
-                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="index.html" class="nav-link" data-translate="nav_inicio">Inicio</a></li>
+                <li><a href="estudios.html" class="nav-link" data-translate="nav_estudios">Estudios</a></li>
+                <li><a href="experiencia.html" class="nav-link active" data-translate="nav_experiencia">Experiencia</a></li>
+                <li><a href="proyectos.html" class="nav-link" data-translate="nav_proyectos">Proyectos</a></li>
+                <li><a href="contacto.html" class="nav-link" data-translate="nav_contacto">Contacto</a></li>
             </ul>
-            <div class="nav-social-links">
-                <a href="https://github.com/ALFREDOJR136" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/alfredo-martinez-escoval-b68544397" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:a.martinez.escoval@gmail.com?body=----%0D%0AEnviado por: " title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-right-section">
+                <div class="nav-social-links">
+                    <a href="https://github.com/ALFREDOJR136" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alfredo-martinez-escoval-b68544397" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:a.martinez.escoval@gmail.com?body=----%0D%0AEnviado por: " title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div id="languageToggle" class="language-toggle" aria-label="Cambiar idioma">
+                    <span class="lang-option" data-lang="es">ES</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                    <span class="lang-indicator"></span>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -34,7 +41,7 @@
         <!-- Experiencia Section -->
         <section id="experiencia" class="experiencia page-section">
             <div class="container">
-                <h2 class="section-title">Experiencia Profesional</h2>
+                <h2 class="section-title" data-translate="experiencia_title">Experiencia Profesional</h2>
                 <div class="experiencia-grid">
                     <div class="experiencia-card">
                         <div class="experiencia-header">
@@ -43,49 +50,49 @@
                                     <i class="fas fa-building"></i>
                                 </div>
                                 <div class="company-info">
-                                    <h2>Departamento de administración</h2>
-                                    <p class="company-name">Serveo · Jornada parcial</p>
+                                    <h2 data-translate="experiencia_cargo">Departamento de administración</h2>
+                                    <p class="company-name" data-translate="experiencia_empresa">Serveo · Jornada parcial</p>
                                 </div>
                             </div>
                             <div class="experiencia-dates">
-                                <p class="experiencia-periodo">jun. 2025 - sept. 2025</p>
+                                <p class="experiencia-periodo" data-translate="experiencia_periodo">jun. 2025 - sept. 2025</p>
                             </div>
                         </div>
                         <p class="experiencia-location">
-                            <i class="fas fa-map-marker-alt"></i> Madrid, España
+                            <i class="fas fa-map-marker-alt"></i> <span data-translate="experiencia_ubicacion">Madrid, España</span>
                         </p>
-                        <p class="experiencia-description">
+                        <p class="experiencia-description" data-translate="experiencia_desc1">
                            Desempeñé el puesto de ayudante de tripulación (ADT) en la empresa Serveo, encargándome de la preparación
                            y coordinación diaria de los trenes y sus tripulaciones. Mis funciones incluían entre otras, la gestión de
                            recursos y materiales necesarios para cada servicio.
                         </p>
-                        <p class="experiencia-description">
+                        <p class="experiencia-description" data-translate="experiencia_desc2">
                            Colaboré estrechamente con distintos equipos para garantizar la correcta atención a las necesidades de la tripulación.
                            Además, respondía de forma rápida y eficaz ante cualquier incidencia operativa, asegurando la continuidad del servicio.
                         </p>
                         
                         <div class="experiencia-competencias">
-                            <h4 class="competencias-title">Competencias</h4>
+                            <h4 class="competencias-title" data-translate="experiencia_competencias_title">Competencias</h4>
                             <div class="competencias-grid">
                                 <div class="competencia-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Administración</span>
+                                    <span data-translate="comp_administracion">Administración</span>
                                 </div>
                                 <div class="competencia-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Trabajo en equipo</span>
+                                    <span data-translate="comp_trabajo_equipo">Trabajo en equipo</span>
                                 </div>
                                 <div class="competencia-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Trato con clientes</span>
+                                    <span data-translate="comp_clientes">Trato con clientes</span>
                                 </div>
                                 <div class="competencia-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Microsoft Office</span>
+                                    <span data-translate="comp_office">Microsoft Office</span>
                                 </div>
                                 <div class="competencia-item">
                                     <i class="fas fa-check-circle"></i>
-                                    <span>Respuesta rápida ante incidencias</span>
+                                    <span data-translate="comp_incidencias">Respuesta rápida ante incidencias</span>
                                 </div>
                             </div>
                         </div>
@@ -109,5 +116,6 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>

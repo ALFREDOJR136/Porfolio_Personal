@@ -11,21 +11,28 @@
         <div class="nav-container">
             <div class="logo">AME</div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="estudios.html" class="nav-link">Estudios</a></li>
-                <li><a href="experiencia.html" class="nav-link">Experiencia</a></li>
-                <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
-                <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                <li><a href="index.html" class="nav-link" data-translate="nav_inicio">Inicio</a></li>
+                <li><a href="estudios.html" class="nav-link" data-translate="nav_estudios">Estudios</a></li>
+                <li><a href="experiencia.html" class="nav-link" data-translate="nav_experiencia">Experiencia</a></li>
+                <li><a href="proyectos.html" class="nav-link" data-translate="nav_proyectos">Proyectos</a></li>
+                <li><a href="contacto.html" class="nav-link active" data-translate="nav_contacto">Contacto</a></li>
             </ul>
-            <div class="nav-social-links">
-                <a href="https://github.com/ALFREDOJR136" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/alfredo-martinez-escoval-b68544397" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:a.martinez.escoval@gmail.com?body=----%0D%0AEnviado por: " title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-right-section">
+                <div class="nav-social-links">
+                    <a href="https://github.com/ALFREDOJR136" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alfredo-martinez-escoval-b68544397" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:a.martinez.escoval@gmail.com?body=----%0D%0AEnviado por: " title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div id="languageToggle" class="language-toggle" aria-label="Cambiar idioma">
+                    <span class="lang-option" data-lang="es">ES</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                    <span class="lang-indicator"></span>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -34,23 +41,23 @@
         <!-- Contacto Section -->
         <section id="contacto" class="contacto page-section">
             <div class="container">
-                <h2 class="section-title">Contacto</h2>
+                <h2 class="section-title" data-translate="contacto_title">Contacto</h2>
                 <div class="contacto-content">
                     <div class="contacto-info">
-                        <h3>¿Hablamos?</h3>
-                        <p>¡Puedes contactarme a través de cualquiera de estos medios!</p>
+                        <h3 data-translate="contacto_hablamos">¿Hablamos?</h3>
+                        <p data-translate="contacto_mensaje">¡Puedes contactarme a través de cualquiera de estos medios!</p>
                         <div class="contacto-items">
                             <div class="contacto-item">
                                 <i class="fas fa-envelope"></i>
                                 <div>
-                                    <h4>Email</h4>
+                                    <h4 data-translate="contacto_email">Email</h4>
                                     <p>a.martinez.escoval@gmail.com</p>
                                 </div>
                             </div>
                             <div class="contacto-item">
                                 <i class="fas fa-phone"></i>
                                 <div>
-                                    <h4>Teléfono</h4>
+                                    <h4 data-translate="contacto_telefono">Teléfono</h4>
                                     <p>+34 625 551 186</p>
                                 </div>
                             </div>
@@ -71,8 +78,8 @@
                             <div class="contacto-item">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div>
-                                    <h4>Ubicación</h4>
-                                    <p>Alcorcón, Madrid (España)</p>
+                                    <h4 data-translate="contacto_ubicacion">Ubicación</h4>
+                                    <p data-translate="contacto_ubicacion_value">Alcorcón, Madrid (España)</p>
                                 </div>
                             </div>
                         </div>
@@ -80,15 +87,15 @@
                     <div class="contacto-form">
                         <form id="contactForm">
                             <div class="form-group">
-                                <input type="text" id="nombre" placeholder="Tu Nombre" required>
+                                <input type="text" id="nombre" placeholder="Tu Nombre" data-translate="form_nombre" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="asunto" placeholder="Asunto">
+                                <input type="text" id="asunto" placeholder="Asunto" data-translate="form_asunto">
                             </div>
                             <div class="form-group">
-                                <textarea rows="8" id="mensaje" placeholder="Mensaje" required></textarea>
+                                <textarea rows="8" id="mensaje" placeholder="Mensaje" data-translate="form_mensaje" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                            <button type="submit" class="btn btn-primary" data-translate="form_btn_enviar">Enviar Mensaje</button>
                         </form>
                     </div>
                 </div>
@@ -110,6 +117,7 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
     <script>
         // Funcionalidad del formulario de contacto

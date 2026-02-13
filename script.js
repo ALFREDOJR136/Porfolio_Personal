@@ -142,23 +142,37 @@ if (fadeElements.length > 0) {
     });
 }
 
-// Efecto de escritura en el hero (opcional)
-const heroSubtitle = document.querySelector('.hero-subtitle');
-if (heroSubtitle) {
-    const text = heroSubtitle.textContent;
-    heroSubtitle.textContent = '';
+// Efecto de escritura en el hero (reutilizable)
+let typewriterTimeout = null;
+
+function startTypeWriter(element, text, delay = 1000) {
+    if (!element) return;
+    
+    // Limpiar cualquier animación anterior
+    if (typewriterTimeout) {
+        clearTimeout(typewriterTimeout);
+    }
+    
+    element.textContent = '';
     let i = 0;
     
     function typeWriter() {
         if (i < text.length) {
-            heroSubtitle.textContent += text.charAt(i);
+            element.textContent += text.charAt(i);
             i++;
-            setTimeout(typeWriter, 50);
+            typewriterTimeout = setTimeout(typeWriter, 50);
         }
     }
     
-    // Iniciar el efecto después de que cargue la página
-    setTimeout(typeWriter, 1000);
+    // Iniciar el efecto después del delay
+    typewriterTimeout = setTimeout(typeWriter, delay);
+}
+
+// Iniciar la animación al cargar la página
+const heroSubtitle = document.querySelector('.hero-subtitle');
+if (heroSubtitle) {
+    const initialText = heroSubtitle.textContent;
+    startTypeWriter(heroSubtitle, initialText, 1000);
 }
 
 // Active link en navegación basado en scroll (solo para página con múltiples secciones)
@@ -192,4 +206,96 @@ navLinks.forEach(link => {
     if (linkPage === currentPage) {
         link.classList.add('active');
     }
+});
+
+// ============================================
+// Sistema de cambio de idioma
+// ============================================
+
+// Obtener idioma del localStorage o usar español por defecto
+let currentLanguage = localStorage.getItem('language') || 'es';
+
+// Función para cambiar el idioma
+function changeLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+    updateContent();
+    updateLanguageButton();
+}
+
+// Función para actualizar el contenido de la página
+function updateContent() {
+    // Obtener todas las traducciones del idioma actual
+    const texts = translations[currentLanguage];
+    
+    // Actualizar todos los elementos con atributo data-translate
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (texts[key]) {
+            // Si es un input o textarea, actualizar el placeholder
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = texts[key];
+            } else {
+                // Para otros elementos, actualizar el texto
+                element.textContent = texts[key];
+            }
+        }
+    });
+    
+    // Reiniciar la animación del hero subtitle si existe
+    const heroSubtitle = document.querySelector('.hero-subtitle');
+    if (heroSubtitle && texts['hero_subtitle']) {
+        startTypeWriter(heroSubtitle, texts['hero_subtitle'], 300);
+    }
+}
+
+// Función para actualizar el botón de idioma
+function updateLanguageButton() {
+    const langToggle = document.getElementById('languageToggle');
+    if (langToggle) {
+        const esOption = langToggle.querySelector('[data-lang="es"]');
+        const enOption = langToggle.querySelector('[data-lang="en"]');
+        
+        // Actualizar clases active
+        if (currentLanguage === 'es') {
+            esOption.classList.add('active');
+            enOption.classList.remove('active');
+            langToggle.classList.remove('en');
+        } else {
+            enOption.classList.add('active');
+            esOption.classList.remove('active');
+            langToggle.classList.add('en');
+        }
+        
+        langToggle.setAttribute('aria-label', currentLanguage === 'es' ? 'Switch to English' : 'Cambiar a Español');
+    }
+}
+
+// Event listener para el botón de cambio de idioma
+document.addEventListener('DOMContentLoaded', function() {
+    const langToggle = document.getElementById('languageToggle');
+    
+    if (langToggle) {
+        // Click en el contenedor completo
+        langToggle.addEventListener('click', () => {
+            const newLang = currentLanguage === 'es' ? 'en' : 'es';
+            changeLanguage(newLang);
+        });
+        
+        // Click específico en cada opción
+        const langOptions = langToggle.querySelectorAll('.lang-option');
+        langOptions.forEach(option => {
+            option.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const selectedLang = option.getAttribute('data-lang');
+                if (selectedLang !== currentLanguage) {
+                    changeLanguage(selectedLang);
+                }
+            });
+        });
+    }
+    
+    // Aplicar el idioma guardado al cargar la página
+    updateContent();
+    updateLanguageButton();
 });

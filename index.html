@@ -11,21 +11,28 @@
         <div class="nav-container">
             <div class="logo">AME</div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Inicio</a></li>
-                <li><a href="estudios.html" class="nav-link">Estudios</a></li>
-                <li><a href="experiencia.html" class="nav-link">Experiencia</a></li>
-                <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
-                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="index.html" class="nav-link active" data-translate="nav_inicio">Inicio</a></li>
+                <li><a href="estudios.html" class="nav-link" data-translate="nav_estudios">Estudios</a></li>
+                <li><a href="experiencia.html" class="nav-link" data-translate="nav_experiencia">Experiencia</a></li>
+                <li><a href="proyectos.html" class="nav-link" data-translate="nav_proyectos">Proyectos</a></li>
+                <li><a href="contacto.html" class="nav-link" data-translate="nav_contacto">Contacto</a></li>
             </ul>
-            <div class="nav-social-links">
-                <a href="https://github.com/ALFREDOJR136" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/alfredo-martinez-escoval-b68544397" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:a.martinez.escoval@gmail.com?body=----%0D%0AEnviado por: " title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-right-section">
+                <div class="nav-social-links">
+                    <a href="https://github.com/ALFREDOJR136" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alfredo-martinez-escoval-b68544397" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:a.martinez.escoval@gmail.com?body=----%0D%0AEnviado por: " title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div id="languageToggle" class="language-toggle" aria-label="Cambiar idioma">
+                    <span class="lang-option" data-lang="es">ES</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                    <span class="lang-indicator"></span>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -37,10 +44,10 @@
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h1 class="hero-title">Alfredo Martínez Escoval</h1>
-            <p class="hero-subtitle">Estudiante de Ingeniería de Sistemas de Información | Ingeniería Informática</p>
+            <p class="hero-subtitle" data-translate="hero_subtitle">Estudiante de Ingeniería de Sistemas de Información | Ingeniería Informática</p>
             <div class="hero-buttons">
-                <a href="contacto.html" class="btn btn-primary">Contáctame</a>
-                <a href="CV - Alfredo martínez escoval.pdf" target="_blank" class="btn btn-secondary">Currículum</a>
+                <a href="contacto.html" class="btn btn-primary" data-translate="hero_btn_contact">Contáctame</a>
+                <a href="CV - Alfredo martínez escoval.pdf" target="_blank" class="btn btn-secondary" data-translate="hero_btn_cv">Currículum</a>
             </div>
         </div>
         <div class="scroll-down">
@@ -51,14 +58,14 @@
     <!-- Sobre Mí Section -->
     <section id="sobre-mi" class="sobre-mi">
         <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
+            <h2 class="section-title" data-translate="section_sobre_mi">Sobre Mí</h2>
             <div class="sobre-mi-content">
                 <div class="sobre-mi-text">
-                    <p>
+                    <p data-translate="sobre_mi_p1">
                         Soy un estudiante de 22 años, actualmente cursando el cuarto año del grado de Ingeniería en Sistemas de Información. 
                         Me considero una persona con una actitud positiva y curiosa, con ganas de seguir aprendiendo y mejorar tanto mis habilidades técnicas como mi capacidad para gestionar proyectos. 
                     </p>
-                    <p>
+                    <p data-translate="sobre_mi_p2">
                         Tengo conocimientos en programación, bases de datos y redes, adquiridos a través de proyectos académicos y trabajos colaborativos en grupo. 
                         Busco oportunidades para aplicar mis conocimientos en el mundo real, contribuir a soluciones innovadoras y continuar desarrollándome profesionalmente.
                     </p>
@@ -70,10 +77,10 @@
     <!-- Habilidades Section -->
     <section id="habilidades" class="habilidades">
         <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
+            <h2 class="section-title" data-translate="section_habilidades">Habilidades Técnicas</h2>
             <div class="habilidades-grid">
                 <div class="habilidad-categoria">
-                    <h3>Programación</h3>
+                    <h3 data-translate="habilidades_programacion">Programación</h3>
                     <div class="languages-grid">
                     <div class="language-item"><i class="fab fa-python"></i> Python</div>
                     <div class="language-item"><i class="fab fa-java"></i> Java</div>
@@ -87,17 +94,17 @@
                     </div>
                 </div>
                 <div class="habilidad-categoria">
-                    <h3>Soft Skills</h3>
+                    <h3 data-translate="habilidades_soft">Soft Skills</h3>
                     <ul class="soft-skills-list">
-                        <li><i class="fas fa-check-circle"></i> Trabajo en equipo</li>
-                        <li><i class="fas fa-check-circle"></i> Resolutivo</li>
-                        <li><i class="fas fa-check-circle"></i> Capacidad de adaptación</li>
-                        <li><i class="fas fa-check-circle"></i> Rapidez de aprendizaje</li>
-                        <li><i class="fas fa-check-circle"></i> Creatividad</li>
+                        <li><i class="fas fa-check-circle"></i> <span data-translate="soft_trabajo_equipo">Trabajo en equipo</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-translate="soft_resolutivo">Resolutivo</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-translate="soft_adaptacion">Capacidad de adaptación</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-translate="soft_aprendizaje">Rapidez de aprendizaje</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-translate="soft_creatividad">Creatividad</span></li>
                     </ul>
                 </div>
                 <div class="habilidad-categoria">
-                    <h3>Herramientas</h3>
+                    <h3 data-translate="habilidades_herramientas">Herramientas</h3>
                     <div class="tools-grid">
                         <div class="tool-item"><i class="fab fa-git-alt"></i> Git</div>
                         <div class="tool-item"><i class="fab fa-github"></i> GitHub</div>
@@ -118,30 +125,30 @@
     <!-- Idiomas Section -->
     <section id="idiomas" class="idiomas">
         <div class="container">
-            <h2 class="section-title">Idiomas</h2>
+            <h2 class="section-title" data-translate="section_idiomas">Idiomas</h2>
             <div class="idiomas-grid">
                 <div class="idioma-card">
-                    <h3>Español</h3>
+                    <h3 data-translate="idioma_espanol">Español</h3>
                     <div class="idioma-info">
-                        <span class="idioma-nivel">Nativo</span>
+                        <span class="idioma-nivel" data-translate="nivel_nativo">Nativo</span>
                     </div>
                     <div class="idioma-bar">
                         <div class="idioma-progress" style="width: 100%"></div>
                     </div>
                 </div>
                 <div class="idioma-card">
-                    <h3>Inglés</h3>
+                    <h3 data-translate="idioma_ingles">Inglés</h3>
                     <div class="idioma-info">
-                        <span class="idioma-nivel">Business / Intermedio</span>
+                        <span class="idioma-nivel" data-translate="nivel_intermedio">Business / Intermedio</span>
                     </div>
                     <div class="idioma-bar">
                         <div class="idioma-progress" style="width: 65%"></div>
                     </div>
                 </div>
                 <div class="idioma-card">
-                    <h3>Portugués</h3>
+                    <h3 data-translate="idioma_portugues">Portugués</h3>
                     <div class="idioma-info">
-                        <span class="idioma-nivel">Avanzado</span>
+                        <span class="idioma-nivel" data-translate="nivel_avanzado">Avanzado</span>
                     </div>
                     <div class="idioma-bar">
                         <div class="idioma-progress" style="width: 85%"></div>
@@ -167,5 +174,6 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
