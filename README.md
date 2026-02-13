@@ -10,7 +10,6 @@ Portfolio personal profesional y responsive para mostrar mi trayectoria académi
 
 Este portfolio personal ha sido desarrollado desde cero utilizando HTML5, CSS y JavaScript, con el objetivo de presentar de manera profesional y visual mi perfil como desarrollador, mis proyectos más destacados, mi formación académica y mi experiencia laboral.
 
-El sitio cuenta con una navegación fluida entre páginas, diseño responsive completamente adaptable a cualquier dispositivo, y animaciones suaves que mejoran la experiencia del usuario.
 ---
 
 ## 📁 Estructura del Proyecto
