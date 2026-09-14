@@ -24,7 +24,12 @@ Porfolio_Personal/
 ├── contacto.html          
 ├── styles.css              
 ├── script.js              
-├── CV - Alfredo martínez escoval.pdf
+├── documents/
+│   ├── cv-alfredo-martinez-escoval.pdf
+│   ├── certificado_capture_the_flag_sin_contraseña.pdf
+│   ├── certificado_next_digital_taller_1.pdf
+│   ├── certificado_next_digital_taller_2.pdf
+│   └── certificado_voluntariado_agentcamp.pdf
 └── README.md
 ```
 ---

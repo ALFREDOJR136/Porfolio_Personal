@@ -15,7 +15,7 @@ const translations = {
         
         // Página de Inicio - Sobre Mí
         section_sobre_mi: "Sobre Mí",
-        sobre_mi_p1: "Soy un estudiante de 22 años, actualmente cursando el cuarto año del grado de Ingeniería en Sistemas de Información. Me considero una persona con una actitud positiva y curiosa, con ganas de seguir aprendiendo y mejorar tanto mis habilidades técnicas como mi capacidad para gestionar proyectos.",
+        sobre_mi_p1: "Soy un estudiante de 23 años, actualmente cursando el cuarto año del grado de Ingeniería en Sistemas de Información. Me considero una persona con una actitud positiva y curiosa, con ganas de seguir aprendiendo y mejorar tanto mis habilidades técnicas como mi capacidad para gestionar proyectos.",
         sobre_mi_p2: "Tengo conocimientos en programación, bases de datos y redes, adquiridos a través de proyectos académicos y trabajos colaborativos en grupo. Busco oportunidades para aplicar mis conocimientos en el mundo real, contribuir a soluciones innovadoras y continuar desarrollándome profesionalmente.",
         
         // Página de Inicio - Habilidades
@@ -61,6 +61,16 @@ const translations = {
         estudios_institucion: "Universidad CEU San Pablo",
         estudios_periodo_actual: "2021 - Actualidad",
         estudios_desc_carrera: "Actualmente curso el grado en Ingeniería Informática, donde estoy adquiriendo una formación sólida en desarrollo de software, arquitectura de sistemas y gestión de proyectos tecnológicos. Esta etapa me está permitiendo fortalecer mis habilidades técnicas y analíticas, además de comprender en profundidad cómo la tecnología puede aportar soluciones innovadoras a distintos ámbitos.",
+
+        estudios_ctf_title: "Capture The Flag (CTF) · Ciberseguridad",
+        estudios_ctf_empresa: "Sherpa Tribe · INCIBE Emprende",
+        estudios_ctf_periodo: "Marzo de 2026",
+        estudios_ctf_desc: "Participé durante dos días en un Capture The Flag desarrollado en colaboración con la Universidad CEU San Pablo, orientado a la resolución de retos prácticos de ciberseguridad. Esta actividad me permitió reforzar habilidades como la investigación, la resolución de problemas y el pensamiento lógico aplicado a entornos de seguridad informática, además de aprender de profesionales del sector y de sus consejos. También trabajé en equipo para alcanzar los objetivos planteados y pude relacionarme con otros estudiantes con intereses similares en tecnología y ciberseguridad.",
+
+        estudios_next_title: "Ingeniería de Datos con Airflow y Asistentes Inteligentes",
+        estudios_next_empresa: "Next Digital",
+        estudios_next_periodo: "Febrero 2026 - Mayo 2026",
+        estudios_next_desc: "Formación práctica dividida en dos talleres, donde pude profundizar en la ingeniería de datos y en el uso de Apache Airflow para organizar y automatizar procesos batch. También trabajé conceptos de IA generativa aplicada a asistentes inteligentes, como RAG, bases de datos vectoriales, embeddings y arquitectura de agentes. Fue una experiencia muy útil para acercarme a herramientas y enfoques que se utilizan en entornos reales y entender mejor cómo se conectan datos, automatización e inteligencia artificial.",
         
         estudios_tarjetas_title: "Desarrollo de aplicaciones en tarjetas inteligentes",
         estudios_tarjetas_empresa: "Diusframi",
@@ -83,21 +93,34 @@ const translations = {
         estudios_bachillerato_desc: "Cursé el Bachillerato Tecnológico con un enfoque en ciencias y tecnología, lo que me permitió adquirir una base sólida en materias técnicas y científicas. Durante esta etapa desarrollé el pensamiento lógico, la capacidad de análisis y el interés por la innovación y la resolución de problemas, sentando las bases para mi formación en el ámbito tecnológico.",
         
         ver_certificado: "Ver certificado",
+        ver_certificado_airflow: "Ver certificado Airflow",
+        ver_certificado_agentes: "Ver certificado asistentes",
+        ver_repositorio: "Ver repositorio",
         
         // Página de Experiencia
         experiencia_title: "Experiencia Profesional",
         experiencia_cargo: "Departamento de administración",
-        experiencia_empresa: "Serveo · Jornada parcial",
-        experiencia_periodo: "jun. 2025 - sept. 2025",
+        experiencia_empresa: "Serveo",
+        experiencia_periodo_2025: "jun. 2025 - sept. 2025",
+        experiencia_periodo_2026: "jun. 2026 - actualidad",
         experiencia_ubicacion: "Madrid, España",
         experiencia_desc1: "Desempeñé el puesto de ayudante de tripulación (ADT) en la empresa Serveo, encargándome de la preparación y coordinación diaria de los trenes y sus tripulaciones. Mis funciones incluían entre otras, la gestión de recursos y materiales necesarios para cada servicio.",
         experiencia_desc2: "Colaboré estrechamente con distintos equipos para garantizar la correcta atención a las necesidades de la tripulación. Además, respondía de forma rápida y eficaz ante cualquier incidencia operativa, asegurando la continuidad del servicio.",
+        experiencia_agentcamp_cargo: "Voluntario en AgentCamp Madrid 2026",
+        experiencia_agentcamp_empresa: "Global AI Community",
+        experiencia_agentcamp_periodo: "Febrero 2026",
+        experiencia_agentcamp_ubicacion: "Madrid, España",
+        experiencia_agentcamp_desc: "Participé como voluntario en la organización de AgentCamp Madrid 2026, evento centrado en inteligencia artificial y agentes inteligentes. Durante la jornada colaboré en tareas de apoyo y coordinación, contribuyendo al correcto desarrollo del evento. Esta experiencia me permitió conocer a profesionales, estudiantes y personas interesadas en el ámbito de la IA, además de reforzar habilidades de comunicación, trabajo en equipo y organización.",
         experiencia_competencias_title: "Competencias",
         comp_administracion: "Administración",
         comp_trabajo_equipo: "Trabajo en equipo",
         comp_clientes: "Trato con clientes",
         comp_office: "Microsoft Office",
         comp_incidencias: "Respuesta rápida ante incidencias",
+        comp_voluntariado: "Voluntariado",
+        comp_eventos: "Organización de eventos",
+        comp_ia_generativa: "IA Generativa",
+        comp_comunicacion: "Comunicación",
         
         // Página de Proyectos
         proyectos_title: "Proyectos Destacados",
@@ -155,7 +178,7 @@ const translations = {
         
         // Home Page - About Me
         section_sobre_mi: "About Me",
-        sobre_mi_p1: "I am a 22-year-old student, currently in the fourth year of my degree in Information Systems Engineering. I consider myself a person with a positive and curious attitude, eager to continue learning and improving both my technical skills and my ability to manage projects.",
+        sobre_mi_p1: "I am a 23-year-old student, currently in the fourth year of my degree in Information Systems Engineering. I consider myself a person with a positive and curious attitude, eager to continue learning and improving both my technical skills and my ability to manage projects.",
         sobre_mi_p2: "I have knowledge in programming, databases and networks, acquired through academic projects and collaborative group work. I am looking for opportunities to apply my knowledge in the real world, contribute to innovative solutions and continue developing professionally.",
         
         // Home Page - Skills
@@ -201,6 +224,16 @@ const translations = {
         estudios_institucion: "CEU San Pablo University",
         estudios_periodo_actual: "2021 - Present",
         estudios_desc_carrera: "I am currently pursuing a degree in Computer Engineering, where I am gaining solid training in software development, systems architecture, and technology project management. This stage is allowing me to strengthen my technical and analytical skills, as well as to understand in depth how technology can provide innovative solutions to different areas.",
+
+        estudios_ctf_title: "Capture The Flag (CTF) · Cybersecurity",
+        estudios_ctf_empresa: "Sherpa Tribe · INCIBE Emprende",
+        estudios_ctf_periodo: "March 2026",
+        estudios_ctf_desc: "I took part in a two-day Capture The Flag held in collaboration with CEU San Pablo University, focused on solving practical cybersecurity challenges. This activity allowed me to strengthen skills such as research, problem solving and logical thinking applied to information security environments, as well as learn from industry professionals and their advice. I also worked as part of a team to achieve the proposed objectives and connected with other students with similar interests in technology and cybersecurity.",
+
+        estudios_next_title: "Data Engineering with Airflow and Intelligent Assistants",
+        estudios_next_empresa: "Next Digital",
+        estudios_next_periodo: "February 2026 - May 2026",
+        estudios_next_desc: "Practical training divided into two workshops, where I was able to deepen my knowledge of data engineering and the use of Apache Airflow to organize and automate batch processes. I also worked on generative AI concepts applied to intelligent assistants, such as RAG, vector databases, embeddings and agent architecture. It was a very useful experience to get closer to tools and approaches used in real environments and to better understand how data, automation and artificial intelligence connect.",
         
         estudios_tarjetas_title: "Smart card application development",
         estudios_tarjetas_empresa: "Diusframi",
@@ -223,21 +256,34 @@ const translations = {
         estudios_bachillerato_desc: "I completed the Technology High School with a focus on science and technology, which allowed me to acquire a solid foundation in technical and scientific subjects. During this stage I developed logical thinking, analytical capacity and interest in innovation and problem solving, laying the foundations for my training in the field of technology.",
         
         ver_certificado: "View certificate",
+        ver_certificado_airflow: "View Airflow certificate",
+        ver_certificado_agentes: "View assistants certificate",
+        ver_repositorio: "View repository",
         
         // Experience Page
         experiencia_title: "Professional Experience",
         experiencia_cargo: "Administration Department",
-        experiencia_empresa: "Serveo · Part-time",
-        experiencia_periodo: "Jun. 2025 - Sept. 2025",
+        experiencia_empresa: "Serveo",
+        experiencia_periodo_2025: "Jun. 2025 - Sept. 2025",
+        experiencia_periodo_2026: "Jun. 2026 - Present",
         experiencia_ubicacion: "Madrid, Spain",
         experiencia_desc1: "I performed the position of crew assistant (ADT) at Serveo company, taking care of the daily preparation and coordination of trains and their crews. My duties included, among others, the management of resources and materials necessary for each service.",
         experiencia_desc2: "I worked closely with different teams to ensure the proper attention to crew needs. In addition, I responded quickly and effectively to any operational incident, ensuring service continuity.",
+        experiencia_agentcamp_cargo: "Volunteer at AgentCamp Madrid 2026",
+        experiencia_agentcamp_empresa: "Global AI Community",
+        experiencia_agentcamp_periodo: "February 2026",
+        experiencia_agentcamp_ubicacion: "Madrid, Spain",
+        experiencia_agentcamp_desc: "I participated as a volunteer in the organization of AgentCamp Madrid 2026, an event focused on artificial intelligence and intelligent agents. During the event, I collaborated on support and coordination tasks, contributing to its smooth running. This experience allowed me to meet professionals, students and people interested in AI, while strengthening my communication, teamwork and organization skills.",
         experiencia_competencias_title: "Skills",
         comp_administracion: "Administration",
         comp_trabajo_equipo: "Teamwork",
         comp_clientes: "Customer service",
         comp_office: "Microsoft Office",
         comp_incidencias: "Quick response to incidents",
+        comp_voluntariado: "Volunteering",
+        comp_eventos: "Event organization",
+        comp_ia_generativa: "Generative AI",
+        comp_comunicacion: "Communication",
         
         // Projects Page
         proyectos_title: "Featured Projects",
